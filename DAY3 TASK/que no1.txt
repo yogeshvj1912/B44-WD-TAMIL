@@ -1,0 +1,20 @@
+//for the given json iterate over all for loop (for ,for in ,for of ,forEach)
+//a.for loop
+var cars={
+  "name" : "BMW",
+  "year" : "2022",
+  "color": "blue"}
+  var carkeys=Object.keys(cars);
+  for(var i=0;i<carkeys.length;i++){
+    console.log(cars[carkeys[i]])}
+
+//b.for in
+var cars={
+  "name" : "BMW",
+  "year" : "2022",
+  "color": "blue"}
+  var carkeys=Object.keys(cars);
+  for(var i=0;i<carkeys.length;i++){
+    console.log(cars[carkeys[i]])}
+
+    

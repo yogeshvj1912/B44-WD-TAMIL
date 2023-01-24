@@ -1,0 +1,44 @@
+//2.create your own resume data in json format
+
+let myResume={
+    "basics": {
+      "name": "YOGESH M",
+      "email": "yogeshvijay1912@gmail.com",
+      "phone": 6381556496,
+      "degree": "B.SC",
+      "location": {
+        "address": "116 Ayyanarappan kovil street,pandoor,gudavancheri,",
+        "postalCode": 603202,
+        "city": "chengalpattu",
+        "state": "Tamilnadu",
+        "country": "India"
+      },
+    },
+    "education": [
+      {
+        "institution": "shanmuga industries arts & science college",
+        "department": "computer science",
+        "studyType": "fulltime",
+        "batch start year": 2016,
+        "batch end year": 2019,
+      }
+    ],
+    "skills": [
+      {
+        "name": "javascript",
+        "level": "beginer",
+      }
+    ],
+    "languages": [
+      {
+        "language": "Tamil,Enlish",
+      }
+    ],
+    "interests": [
+      {
+        "name": "playing games,editing",
+      }
+    ]
+  }
+  console.log(myResume);
+  
