@@ -1,0 +1,99 @@
+3. Do the below programs in arrow functions.
+
+
+  a. Print odd numbers in an array
+
+var array=[7,1,2,3,4,15,18]
+var fn= (array)=>{
+    var arr= []
+for(var i = 0 ; i< array.length ; i++){
+if(array[i]%2!=0){
+  arr.push(array[i])
+  } 
+                      
+ }
+console.log(arr)
+}
+fn(array)
+
+   b. Convert all the strings to title caps in a string array
+
+ let strings=["hello guvi how are you"]
+let titleCase=(strings)=> {
+  return strings.map(str => {
+    let words = str.split(" ");
+    let result = "";
+    for (let i = 0; i < words.length; i++) {
+      let word = words[i];
+      result += word[0].toUpperCase() + word.slice(1).toLowerCase() + " ";
+    }
+    return result.trim();
+  });
+}
+
+console.log(titleCase(strings))
+//output : [ 'Hello Guvi How Are You' ]
+
+   
+   c. Sum of all numbers in an array
+
+let numArra=[1,2,3,4,5,6,7,8,9]
+let arr=(numArra)=>{
+let arr1=numArra.reduce((e,t)=>e+t)
+    return arr1
+}
+    console.log(arr(numArra))
+
+// Output:
+// 45
+
+
+
+    d. Return all the prime numbers in an array
+
+let n=[20]
+let arr=(n)=>{
+     var a=[]
+    for (var j=2;j<=n;j++){
+        var pn = true;
+        for(var i=2; i<=j;i++){
+            if(j%i==0 && i !=j){
+                pn = false;
+            }
+        }
+        if(pn==true){
+        a.push(j)
+        }
+    }
+    console.log(a)
+}
+ arr(n)
+
+// Output:
+// [ 2, 3, 5, 7, 11, 13, 17, 19 ]
+
+
+
+
+ e. Return all the palindromes in an array
+
+
+let value=["hello","world","mom","level","tenet","121"]
+const palindrom=[];
+const findpalindrom=(value)=>{
+    let rev=value.split("").reverse().join("")
+    if(value==rev){
+        palindrom.push(value);
+    }
+}
+for (var i=0;i<value.length;i++){
+    if(value[i]){
+        findpalindrom(value[i])
+    }
+}
+console.log(palindrom)
+
+// Output:
+// [ 'mom', 'level', 'tenet', '121' ]
+
+
