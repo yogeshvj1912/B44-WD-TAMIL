@@ -1,0 +1,37 @@
+class Person {
+  constructor(firstName, lastName, age, address, phoneNumber) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.address = address;
+    this.phoneNumber = phoneNumber;
+  }
+
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+
+  updateAddress(newAddress) {
+    this.address = newAddress;
+  }
+
+  updatePhoneNumber(newPhoneNumber) {
+    this.phoneNumber = newPhoneNumber;
+  }
+}
+
+const person1 = new Person("John", "Doe", 30, "123 Main St.", "555-555-5555");
+
+console.log("Full Name:", person1.fullName());
+console.log("Age:", person1.age);
+console.log("Address:", person1.address);
+console.log("Phone Number:", person1.phoneNumber);
+
+person1.updateAddress("456 Main St.");
+person1.updatePhoneNumber("555-555-5556");
+
+console.log("\nUpdated Information:");
+console.log("Full Name:", person1.fullName());
+console.log("Age:", person1.age);
+console.log("Address:", person1.address);
+console.log("Phone Number:", person1.phoneNumber);

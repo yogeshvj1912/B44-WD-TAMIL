@@ -1,0 +1,20 @@
+class UberPrice {
+  constructor(distance, time) {
+    this.distance = distance;
+    this.time = time;
+  }
+
+  calculatePrice() {
+    let basePrice = 5.00;
+    let costPerMile = 2.00;
+    let costPerMinute = 0.25;
+
+    let price = basePrice + (this.distance * costPerMile) + (this.time * costPerMinute);
+
+    return price;
+  }
+}
+
+let trip = new UberPrice(10,20);
+console.log("The price of the trip is $" + trip.calculatePrice().toFixed(2));
+
